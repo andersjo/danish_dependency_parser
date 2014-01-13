@@ -1,0 +1,55 @@
+Apache OpenNLP 1.5.2-incubating
+===============================
+
+
+Building from the Source Distribution
+-------------------------------------
+
+At least Maven 3.0.0 is required for building.
+
+To build everything go into the opennlp directory and run the following command:
+    mvn clean install
+   
+The results of the build will be placed  in:
+    opennlp-distr/target/apache-opennlp-[version]-bin.tar-gz (or .zip)
+
+What is new in OpenNLP 1.5.2-incubating
+---------------------------------------
+
+This release contains a couple of new features, improvements and bug fixes.
+The maxent trainer can now run in multiple threads to utilize
+multi-core CPUs, configurable feature generation was added to the name finder,
+the perceptron trainer was refactored and improved, machine learners
+can now be configured with much more options via a parameter file,
+evaluators can print out detailed evaluation information.
+
+Additionally the release contains the following noteworthy changes:
+
+- Improved the white space handling in the Sentence Detector and its training code
+- Added more cross validator command line tools
+- Command line handling code has been refactored
+- Fixed problems with the new build
+- Now uses fast token class feature generation code by default
+- Added support for BioNLP/NLPBA 2004 shared task data
+- Removal of old and deprecated code
+- Dictionary case sensitivity support is now done properly
+
+A detailed list of the issues related to this release can be found in the release
+notes.
+
+Requirements
+------------
+Java 1.5 is required to run OpenNLP
+Maven 3.0.0 is required for building it
+
+Known OSGi Issues
+------------
+In an OSGi environment the following things are not supported:
+- The coreference resolution component
+- The ability to load a user provided feature generator class
+
+Note
+----
+The current API contains still many deprecated methods, these
+will be removed in one of our next releases, please
+migrate to our new API.

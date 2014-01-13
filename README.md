@@ -10,7 +10,13 @@ The tagger and the parser are trained using the `train_danish_pipeline.py` scrip
 
 ### Data
 
-The pre-trained models are learned on the training part of the Danish Dependency Treebank. We use the version distributed as a part of the CONLL 2006 shared task on parsing. Part-of-speech tags are converted to the Google universal tagset. 
+The pre-trained models are learned on the training part of the Danish Dependency Treebank. We use the version distributed as a part of the CONLL 2006 shared task on parsing. Part-of-speech tags are converted to the Google universal tagset before training. 
+
+### Included software
+
+* Apache OpenNLP 1.5.2
+* Mate tools 3.3
+* Universal part-of-speech tags conversion files
 
 ### Results
 
