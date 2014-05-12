@@ -15,7 +15,7 @@ MATE_DIR=software/mate
 #   - original part-of-speech mapped according to POS_MAP file
 echo "Rewriting treebank and mapping part of speech"
 mkdir -p $W/treebank
-for file in data/treebank/orig/*; do
+for file in data/treebank/*; do
     mod_treebank=$W/$(basename $file)
 
     # Edge direction
